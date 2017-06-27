@@ -11,14 +11,14 @@ public class Client {
 
     public static void main(String[] args) throws IOException {
 
-        String host = "192.168.2.71"; //"localhost"
+        String host = "localhost";
         int port = 4444;
 
         Socket socket = new Socket(host,port);
         BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         PrintWriter printWriter = new PrintWriter(socket.getOutputStream(),true);
 
-        printWriter.println("Hello from client!");
+        printWriter.println("wwHello from client!");
         //printWriter.flush(); //not need because added autoFlush: true;
 
 
